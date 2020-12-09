@@ -74,7 +74,5 @@ print(f'{greet}, {name}. xD.')           # 3.6 and newer allows f-strings
 print(f'{greet}, {name.upper()}. xD.')   # Apply basic functions to the formatted strings
 
 
-
-
 end = intro.replace('introduction', 'ending')
 print(end)
