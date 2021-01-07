@@ -38,8 +38,8 @@ def test_use():
      Test usage of the program.
     """
     for flag in ['-h', '--help']:
-        value, out = getstatusoutput(f'{filename} {flag}')
-        assert value == 0
+        rv, out = getstatusoutput(f'{filename} {flag}')
+        assert rv == 0
         assert out.lower().startswith('usage')
 
 
@@ -47,3 +47,8 @@ def test_input():
     """
     Test whether the program can take input or not.
     """
+    for value in ['Rye', 'Tiffany']:
+        for flag in ['-n', '--name']:
+            rv, out = getstatusoutput(f'{filename} {flag} {value}')
+            assert rv == 0
+            assert out.strip() == f'Hello, {value}!'
