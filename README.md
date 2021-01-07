@@ -1,9 +1,7 @@
 Meatball
 ========
 
-A multiple project repository and personal development kit in Python.
-
-If I ever had a snake, his name would be meatball.
+A project repository and personal SDK written in Python.
 
 
 Getting Started
@@ -23,9 +21,7 @@ Depending on your OS:
 make {linux, osx}
 ```
 
-Once the installation is complete, use CTRL+SHIFT+V in the terminal window to
-activate the virtual environment (`source venv/bin/activate` was copied during setup).
-
+Activate the virtual environment with `source venv/bin/activate` or paste it from the clipboard.
 
 > Minimum Python version required is 3.6
 
