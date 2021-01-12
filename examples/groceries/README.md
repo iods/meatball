@@ -60,3 +60,22 @@ Tests
 -----
 
 Run the test suite to ensure your program is correct:
+
+```sh
+groceries [feature/groceries] ⚡  make test
+================================================ test session starts ================================================
+platform linux -- Python 3.6.9, pytest-6.2.1, py-1.10.0, pluggy-0.13.1 -- /home/darkstar/Developer/python/python-meatball/venv/bin/python3
+cachedir: .pytest_cache
+rootdir: /home/darkstar/Developer/python/python-meatball/examples/groceries
+collected 7 items
+
+test.py::test_exists PASSED                                                                                   [ 14%]
+test.py::test_usage PASSED                                                                                    [ 28%]
+test.py::test_one PASSED                                                                                      [ 42%]
+test.py::test_two PASSED                                                                                      [ 57%]
+test.py::test_two_sorted PASSED                                                                               [ 71%]
+test.py::test_multiple PASSED                                                                                 [ 85%]
+test.py::test_multiple_sorted PASSED                                                                          [100%]
+
+================================================= 7 passed in 0.25s =================================================
+```
