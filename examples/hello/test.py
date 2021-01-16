@@ -5,7 +5,7 @@ Tests for Iods Python Hello World.
 
 import os
 from subprocess import getoutput
-# from subprocess import getstatusoutput
+from subprocess import getstatusoutput
 
 filename = "./hello.py"
 
@@ -35,11 +35,20 @@ def test_executes():
 
 def test_use():
     """
-     Test usage of the program to receive output.
+     Test usage of the program.
     """
+    for flag in ['-h', '--help']:
+        rv, out = getstatusoutput(f'{filename} {flag}')
+        assert rv == 0
+        assert out.lower().startswith('usage')
 
 
 def test_input():
     """
     Test whether the program can take input or not.
     """
+    for value in ['Rye', 'Tiffany']:
+        for flag in ['-n', '--name']:
+            rv, out = getstatusoutput(f'{filename} {flag} {value}')
+            assert rv == 0
+            assert out.strip() == f'Hello, {value}!'
