@@ -1,4 +1,13 @@
 
+## Getting Started
+
+ * Python comes with a built-in IDE called IDLE
+ * Blocks are called suites
+ * suites are preceded by :
+
+
+
+
 ## Immutability
 
 Strings in Python are immutable. They cannot be changed.

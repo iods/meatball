@@ -17,27 +17,28 @@ Exercises
 ### Instructions
 
   1. Write a program that outputs "Hello, World!"
-     ```python
-     python hello.py
-     Hello, World!
-     ```
+```sh
+python hello.py
+
+Hello, World!
+````
   2. Have that program accept a name as an optional parameter
-     ```python
-     python hello.py --name Jack Skellington
-     Hello, Jack Skellington!
-     ```
+```sh
+python hello.py --name Jack Skellington
+Hello, Jack Skellington!
+```
   3. Have that program produce help documentation
-     ```python
+     ``
      python hello.py -h
 
-     usage: hello.py [-h] [-n str]
+     usage: hello.py `[-h]` `[-n str]`
 
      Say Hello!
 
      optional arguments:
        -h, --help show this help message and exit
        -n str, --name str the name to greet, default is world.
-     ```
+     ``
 
 Tests
 -----
