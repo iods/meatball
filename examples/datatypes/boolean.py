@@ -1,7 +1,13 @@
-# Iods Python Development
-#
-# The Basics
-# Data Types: Boolean
+#!/usr/bin/env python3
+
+# Project:   python-meatball
+# Copyright: (c) 2021, Rye Miller
+
+"""Introduction to Data Types: Boolean
+
+Offers examples and notes on how to define and assign a boolean value
+across Python.
+"""
 
 bool(True)
 bool(False)
