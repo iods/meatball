@@ -1,11 +1,18 @@
-# Iods Python Development
-#
-# The Basics
-# Data Types: Strings
+#!/usr/bin/env python3
+
+# Project:   python-meatball
+# Copyright: (c) 2021, Rye Miller
+
+"""Introduction to Data Types: Strings
+
+Offers examples and notes on how to define and assign strings across
+Python, nothing too fancy.
+"""
+
 intro = 'An introduction to Data Types: Strings.'
 print(intro)
 
- # String variables
+# String variables
 string = 'Speak Softly and Hustle Hard.'
 string_long = '''
 Never let the odds keep you from doing what you know in your
@@ -49,29 +56,29 @@ print(string_id.isidentifier())       # True, starts with a letter not number?
 # Python stores strings as sequences of letters in memory
 string_index = 'String Indexes'
 
-print(string_index[0])      # First letter
-print(string_index[3])      # i (third index of the string)
-print(string_index[0:4])    # Stri - Starts at the 0 index and goes to the fourth
-print(string_index[4:14])   # ng Indexes - Starts at the fourth index and goes to the 14th
-print(string_index[:])      # String Indexes
-print(string_index[1:])     # tring Indexes
-print(string_index[:1])     # S
-print(string_index[-1])     # s (- starts from the back and reverse)
-print(string_index[-5])     # d
-print(string_index[::1])    # String Indexes
-print(string_index[::-1])   # sexednI gnirtS
-print(string_index[0:10:2]) # [start:end:step] slicing - Srn n
+print(string_index[0])       # First letter
+print(string_index[3])       # i (third index of the string)
+print(string_index[0:4])     # Stri - Starts at the 0 index and goes to the fourth
+print(string_index[4:14])    # ng Indexes - Starts at the fourth index and goes to the 14th
+print(string_index[:])       # String Indexes
+print(string_index[1:])      # tring Indexes
+print(string_index[:1])      # S
+print(string_index[-1])      # s (- starts from the back and reverse)
+print(string_index[-5])      # d
+print(string_index[::1])     # String Indexes
+print(string_index[::-1])    # sexednI gnirtS
+print(string_index[0:10:2])  # [start:end:step] slicing - Srn n
 
 
 # String Concatenation and Formatted Strings
 greet = 'Hey, there'
 name = 'Tiffany'
 
-print(greet + name + '. xD.')            # Outputs two concatenated strings with no space.
-print(greet + ', ' + name + '. xD.')     # Outputs can get dirty w/ larget amount of vars.
-print('{}, {}. xD.'.format(greet, name)) # Fromatted strings
-print(f'{greet}, {name}. xD.')           # 3.6 and newer allows f-strings
-print(f'{greet}, {name.upper()}. xD.')   # Apply basic functions to the formatted strings
+print(greet + name + '. xD.')             # Outputs two concatenated strings with no space.
+print(greet + ', ' + name + '. xD.')      # Outputs can get dirty w/ larget amount of vars.
+print('{}, {}. xD.'.format(greet, name))  # Fromatted strings
+print(f'{greet}, {name}. xD.')            # 3.6 and newer allows f-strings
+print(f'{greet}, {name.upper()}. xD.')    # Apply basic functions to the formatted strings
 
 
 end = intro.replace('introduction', 'ending')

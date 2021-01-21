@@ -3,7 +3,7 @@
 # Project:   python-meatball
 # Copyright: (c) 2021, Rye Miller
 
-"""Integers and Floats, Arithmetic Operators (Numbers)
+"""Introduction to Data Types: Numbers (Integers, Floats, Complex Numbers, and Operators)
 
 Offers examples and notes on how to define and assign numbers across
 Python, including arithmetic operators and tips and tricks for dealing
