@@ -7,9 +7,6 @@
 print(bin(12))
 print(int('0b1100', 2))
 
-# List [list]
-print([1, 2, 3])
-print(type([1, 2, 3]))
 
 # Tuple [tuple]
 print({9.8, 3.14, 2.7})
@@ -17,6 +14,3 @@ print(type({9.8, 3.14, 2.7}))
 
 # Set [set]
 
-# Dictionary [dict]
-print({'input': 'output'})
-print(type({'input': 'output'}))
