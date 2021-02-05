@@ -5,18 +5,17 @@ osx: init install_venv init_env_mac install_deps finish
 
 
 # Complete the installation (placeholder)
-.PHONY: finish
 finish:
 	@echo "Completed installation of dependencies."
 	@echo "Completed the Meatball Installation."
 
 
 # Install the project dependencies
-install_deps: requirements.txt
+install_deps: requirements-dev.txt
 	@echo "Installation of project dependencies."
 	@venv/bin/pip install --upgrade pip
 	@venv/bin/pip install wheel
-	@venv/bin/pip install -r requirements.txt --upgrade
+	@venv/bin/pip install -r requirements-dev.txt --upgrade
 
 
 # Install/create the Python virtual environment
@@ -38,7 +37,6 @@ init_env_mac:
 
 
 # Initiate project creation (placeholder)
-.PHONY: init
 init:
 	@echo "Starting the Python Meatball Installation."
 
