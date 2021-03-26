@@ -2,4 +2,8 @@ bs4
 lxml
 numpy
 pandas
+python-dotenv
 requests
+slack
+slack_sdk
+slackeventsapi
